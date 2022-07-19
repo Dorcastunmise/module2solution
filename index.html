@@ -59,10 +59,10 @@
 
         <b>To Buy List :</b>
           <div ng-repeat = "item in toBuy.items">
-            <ol type="a">
+            <ul>
             <li> Buy  {{item.quantity}}  {{item.name}}
             <button ng-click = "toBuy.buyItem($index)"class="secure"><span class= "glyphicon glyphicon-ok"></span>Bought</button></li>
-            </ol>
+            </ul>
           </div>
 
         <div ng-if="toBuy.errorMessage()" class="error">Everything is bought!</div>
